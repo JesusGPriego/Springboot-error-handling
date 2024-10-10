@@ -1,6 +1,6 @@
 # Springboot - Error handling
 
-This is a simple project whose main topic is Error Handling and Error handling delegatio
+This is a simple project whose main topic is Error Handling and Error handling delegation
 
 As usual, project architecture follows MVC pattern.
 
