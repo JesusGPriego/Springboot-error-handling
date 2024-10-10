@@ -2,7 +2,6 @@ package com.suleware.springboot.error.springboot_error.controllers;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.NoSuchElementException;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -35,7 +34,7 @@ public class AppController {
     }
 
     @GetMapping("/users/{id}")
-    public ResponseEntity<?> findUser(@PathVariable Long id) {
+    public ResponseEntity<Object> findUser(@PathVariable Long id) {
         Optional<User> oUser = userService.findById(id);
         if (oUser.isEmpty()) {
             return ResponseEntity.notFound().build();
